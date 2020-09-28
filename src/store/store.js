@@ -22,4 +22,11 @@ export const store = new Vuex.Store({
       });
     },
   },
+  mutations: {
+    reducePrice: (state) => {
+      return state.products.forEach((product) => {
+        return (product.price -= 1);
+      });
+    },
+  },
 });
