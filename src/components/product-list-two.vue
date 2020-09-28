@@ -13,6 +13,11 @@
 <script>
 export default {
   name: "productTwo",
+  computed: {
+    products() {
+      return this.$store.state.products;
+    },
+  },
 };
 </script>
 
